@@ -1,4 +1,3 @@
-import skillMe from '../../Data/Data'
 import resume from '../../assets/geoCv.pdf'
 import social from '../../assets/github.svg'
 import link from '../../assets/link.svg'
@@ -8,6 +7,7 @@ import html from '../../assets/html.svg'
 import css from '../../assets/css.svg'
 import type from '../../assets/type.svg'
 import laptop from '../../assets/laptop.jpg'
+import me from '../../assets/me2.png'
 import 'boxicons'
 
 const Content = () => {
@@ -72,7 +72,9 @@ const Content = () => {
                         </div>
                     </div>
                     <div className="flex items-center justify-center col-span-2 order-2 ">
-                        Ini Foto Profile
+                        <div className='mb-52 ml-40'>
+                            <img src={me} className='rounded-full border-8 border-gray-800 shadow-lg w-3/5 animate-spin-slow profile-picture' alt="" />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -107,7 +109,7 @@ const Content = () => {
                                             Support
                                         </h1>
                                         <h1 className='text-sm text-gray-500 font-semibold'>
-                                            Onlinex 24/7
+                                            Onlinex 24 / 7
                                         </h1>
                                     </div>
                                 </div>
@@ -122,11 +124,16 @@ const Content = () => {
                                         </h1>
                                     </div>
                                 </div>
+
                             </div>
                             <p className='text-[14px]'>
                                 As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.
                             </p>
+                            <div className='text-black py-4 font-semibold'>
+                                <a href={resume} download='resume' className="p-4 border-black text-sm justify-center flex cursor-pointer border w-2/5">Download CV</a>
+                            </div>
                         </div>
+
                     </div>
                     <div>
                     </div>
@@ -141,28 +148,92 @@ const Content = () => {
                         <hr className="w-20 h-8" />
                     </div>
                 </div>
+                <div className="flex gap-10">
+                    <div className='rounded-md border p-4'>
+                        <div className='flex flex-col'>
+                            <img src={dataMe.img} className='w-40' alt="" />
+                            <h1 className='py-2 font-bold'>
+                                hrcerdas.id
+                            </h1>
+                            <p className='text-sm font-semibold text-gray-600'>
+                                Hrcerdas is a system for headhunters who want to search for potential candidates by analyzing their personalities from social media
+                            </p>
+                            <div className='flex gap-4 py-2'>
+                                <div className='border shadow-md p-2 font-semibold text-sm'>
+                                    React JS
+                                </div>
+                                <div className='border shadow-md p-2 font-semibold text-sm'>
+                                    Tailwind CSS
+                                </div>
+                            </div>
+                            <div className='flex gap-4 py-4'>
+                                <a href="http://hrcerdas.id/" target='_blank'>
+                                    <h1 className='font-semibold text-sm flex items-center'>
+                                        Live Code
+                                        <box-icon name='right-arrow-alt' ></box-icon>
+                                    </h1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='rounded-md border p-4'>
+                        <div className='flex flex-col'>
+                            <img src={dataMe.img} className='w-40' alt="" />
+                            <h1 className='py-2 font-bold'>
+                                Go Scholarship
+                            </h1>
+                            <p className='text-sm font-semibold text-gray-600'>
+                                Explore scholarships, grants, and financial aid opportunities on our information website. Find the right support for your academic journey and achieve your educational dreams
+                            </p>
+                            <div className='flex gap-4 py-2'>
+                                <div className='border shadow-md p-2 font-semibold text-sm'>
+                                    React
+                                </div>
+                                <div className='border shadow-md p-2 font-semibold text-sm'>
+                                    Chakra UI
+                                </div>
+                                <div className='border shadow-md p-2 font-semibold text-sm'>
+                                    SASS
+                                </div>
+                            </div>
+                            <div className='flex gap-4 py-4'>
+                                <a href="https://hrcerdas.id" target='_blank'>
+                                    <h1 className='font-semibold text-sm flex items-center'>
+                                        Live Code
+                                        <box-icon name='right-arrow-alt' ></box-icon>
+                                    </h1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='rounded-md border p-4'>
+                        <div className='flex flex-col'>
+                            <img src={dataMe.img} className='w-40' alt="" />
+                            <h1 className='py-2 font-bold'>
+                                Si Segar
+                            </h1>
+                            <p className='text-sm font-semibold text-gray-600'>
+                                Order fresh vegetables online conveniently through our website. Enjoy a wide selection of quality vegetables delivered right to your doorstep.
+                            </p>
+                            <div className='flex gap-4 py-2'>
+                                <div className='border shadow-md p-2 font-semibold text-sm'>
+                                    React
+                                </div>
+                                <div className='border shadow-md p-2 font-semibold text-sm'>
+                                    Vanilla CSS
+                                </div>
+                            </div>
+                            <div className='flex gap-4 py-4'>
+                                <a href="https://hrcerdas.id" target='_blank'>
+                                    <h1 className='font-semibold text-sm flex items-center'>
+                                        Live Code
+                                        <box-icon name='right-arrow-alt' ></box-icon>
+                                    </h1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-                <div className="grid grid-cols-4 gap-10">
-                    <div className='col-span-2 w-3/5 h-3/5  rounded-lg p-4'>
-                        <div className='cursor-pointer transition hover:scale-105'>
-                            <img src={dataMe.img} alt="" />
-                        </div>
-                    </div>
-                    <div className='col-span-2 w-3/5 h-3/5  rounded-lg p-4'>
-                        <div className='cursor-pointer transition hover:scale-105'>
-                            <img src={dataMe.img} alt="" />
-                        </div>
-                    </div>
-                    <div className='col-span-2 w-3/5 h-3/5  rounded-lg p-4'>
-                        <div className='cursor-pointer transition hover:scale-105'>
-                            <img src={dataMe.img} alt="" />
-                        </div>
-                    </div>
-                    <div className='col-span-2 w-3/5 h-3/5  rounded-lg p-4'>
-                        <div className='cursor-pointer transition hover:scale-105'>
-                            <img src={dataMe.img} alt="" />
-                        </div>
-                    </div>
                 </div>
                 <div>
                 </div>
