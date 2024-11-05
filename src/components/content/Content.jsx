@@ -118,7 +118,7 @@ const Content = () => {
                       Experience
                     </h1>
                     <h1 className="text-sm text-gray-500 font-semibold">
-                      2 Years
+                      1 Years
                     </h1>
                   </div>
                 </div>
@@ -167,7 +167,7 @@ const Content = () => {
             return (
               <div key={index} className="rounded-md w-full border p-4">
                 <div className="flex flex-col">
-                  <img src={dataMe.img} className="w-40" alt="" />
+                  <img src={item.image} className="w-1/2" alt="" />
                   <h1 className="py-2 font-bold">{item?.name}</h1>
                   <p className="text-sm font-semibold text-gray-600">
                     {item?.description}
@@ -183,16 +183,18 @@ const Content = () => {
                     ))}
                   </div>
                   <div className="flex gap-4 py-4">
-                    <div className="px-4 py-2 border-black border-2 shadow-md transition duration-700 hover:bg-black hover:text-white cursor-pointer">
-                      <Link to={item?.path[0]}>
-                        <button>
-                          <h1 className="font-semibold text-sm flex items-center">
-                            Source Github
-                            <box-icon name="right-arrow-alt"></box-icon>
-                          </h1>
-                        </button>
-                      </Link>
-                    </div>
+                    {item?.path && item.path[0] && (
+                      <div className="px-4 py-2 border-black border-2 shadow-md transition duration-700 hover:bg-black hover:text-white cursor-pointer">
+                        <Link to={item?.path[0]}>
+                          <button>
+                            <h1 className="font-semibold text-sm flex items-center">
+                              Source Github
+                              <box-icon name="right-arrow-alt"></box-icon>
+                            </h1>
+                          </button>
+                        </Link>
+                      </div>
+                    )}
                     {item?.path[1] && (
                       <div className="px-4 py-2 border-black border-2 shadow-md transition duration-700 hover:bg-black hover:text-white cursor-pointer">
                         <Link to={item?.path[1]}>
