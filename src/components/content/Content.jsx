@@ -25,7 +25,10 @@ const Content = () => {
                 <a href="https://github.com/geofannyher" target="_blank">
                   <img className="w-9" src={social} alt="" />
                 </a>
-                <a href="https://github.com/geofannyher" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/geofannyher/"
+                  target="_blank"
+                >
                   <img className="w-9" src={link} alt="" />
                 </a>
               </div>

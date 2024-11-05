@@ -2,7 +2,10 @@ export const skillMe = [
   {
     img: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
     title: "Git Version Control",
-    path: ["https://github.com/geofannyher/Ecci", ""],
+    path: [
+      "https://github.com/geofannyher",
+      "https://www.linkedin.com/in/geofannyher/",
+    ],
     description:
       "Frontend create a responsive website in dekstop and mobile. ve worked on a variety of projects for clients in the retail, travel, and healthcare industries.",
   },
@@ -60,7 +63,7 @@ export const skillMe = [
 export const dataMe = {
   hello: "Hello, I'm a",
   hello2: "Frontend Developer",
-  tag: "Hi, Geofany Hermawan. A passionate Front-end React Developer based in Jember,Indonesia. 📍",
+  tag: "Hi, Geofany Hermawan. A passionate Front-end based in Jember,Indonesia. 📍",
   img: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1999&q=80",
 };
 
